@@ -1,0 +1,21 @@
+<html>
+    <h3>Mini Jira v1.0</h3>
+    <hr>
+    {% if isFinish == true %}
+        <p>Tüm görevlerin dağıtımı tamamlandı.</p>
+    {% else %}
+        <p>Bir hata oluştu!</p>
+    {% endif %}
+    <hr>
+    <b>Nasıl Kullanabilirim</b><br/>
+    <br>
+    URL'de /home 'dan sonra hafta sayısını yazarak haftalık çizelgeye ulaşabilirsiniz. Örnek => /home/1 <br/>
+    <br>
+    Kullanmadan önce görevleri çekmek için <b>app:getTask</b> komutunu kullanmalısınız!<br/>
+    <br>
+    /all/tasks url'inden bütün taskları görebilirsiniz.<br/>
+    <hr>
+    <b>İşin toplam süresi</b><br/>
+    <br>
+    {{ week }} hafta
+</html>

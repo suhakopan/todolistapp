@@ -1,0 +1,22 @@
+<table>
+    <tr>
+        <th>Description</th>
+        <th>Level</th>
+        <th>Duration</th>
+        <th>isDone</th>
+    </tr>
+    <tbody>
+    {% for c in content %}
+        <tr>
+            <td>{{ c.description }}</td>
+            <td>{{ c.level }}</td>
+            <td>{{ c.duration }}</td>
+            {% if c.isDone == false %}
+                <td>false</td>
+            {% else %}
+                <td>true</td>
+            {% endif %}
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>

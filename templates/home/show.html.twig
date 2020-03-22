@@ -1,0 +1,20 @@
+<table>
+    <h3>Mini Jira v1.0</h3>
+    <hr>
+    <tr>
+        <th>Developer</th>
+        <th>Task</th>
+        <th>Duration</th>
+        <th>Week</th>
+    </tr>
+    <tbody>
+    {% for t in timesheets %}
+        <tr>
+            <td>{{ t['dev_name']}}</td>
+            <td>{{ t['task_name'] }}</td>
+            <td>{{ t['duration'] }}</td>
+            <td>{{ t['week'] }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
